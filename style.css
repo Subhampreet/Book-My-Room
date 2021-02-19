@@ -234,12 +234,143 @@ nav .nav-button .book-room:hover{
     margin-top: 40px;
     font-size: 30px;
     letter-spacing: 0.1rem;
-    line-height: 3.5rem;
-    font-weight: 600;
+    /* line-height: 3.5rem; */
+    font-weight: 700;
 }
 
 .hero .hero-bottom .hero-bottom-right h1 span{
-    color: #eb9019;
+    /* color: #eb9019; */
     font-size: 65px;
     text-shadow: 2px 2px 2px #181515;
+    font-weight: 500;
+}
+
+/* ----------------------------ABOUT--------------------------- */
+
+.about {
+    position: relative;
+    background: #f0f0f3;
+    padding: 70px 0px 50px;
+    color: rgb(34, 32, 32);
+}
+
+
+
+.about .about-body{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+.about .about-body .about-left h2{
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.about .about-body .about-left  h2 span{
+    font-weight: 500;
+}
+
+.about .about-body img{
+    width: 40%;
+}
+
+.about .about-body .about-left p{
+    width: 70%;
+    font-size: 17px;
+    letter-spacing: 0.01rem;
+    font-weight: 500;
+    color: rgb(56, 55, 55);
+    line-height: 1.9rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.about .about-body .about-left p span{
+    font-weight: 600;
+}
+
+
+.about .about-body .about-left a{
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    color: #f19823;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+/* ----------------------------------------FOOTER----------------------- */
+
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #161414;
+    padding: 70px 0px 50px;
+}
+
+footer .footer-body{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-body .footer-left .footer-logo{
+    letter-spacing: 0.1rem;
+    font-size: 19px;
+}
+
+footer .footer-body .footer-left .footer-logo b{
+    font-weight: 600;
+    color: #da8413;
+}
+
+footer .footer-body .footer-left p{
+    width: 80%;
+    letter-spacing: 0.1rem;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin-top: 20px;
+}
+
+footer .footer-body .footer-left .footer-social{
+    margin-top: 30px;
+    width: 43%;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(95, 93, 93);
+}
+
+footer .footer-body .footer-left .footer-social i{
+    font-size: 25px;
+}
+
+footer .footer-body .footer-left .footer-social i:hover{
+    font-size: 30.5px;
+    color: #f19823;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+footer .footer-body .footer-right{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.1rem;
+}
+
+footer .footer-body .footer-right .footer-list .main{
+    font-weight: 600;    
+    color:rgb(85, 83, 83);
+    margin-bottom: 15px;
+}
+
+footer .footer-body .footer-right .footer-list li{
+    margin-bottom: 15px;
 }

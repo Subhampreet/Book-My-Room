@@ -1,0 +1,245 @@
+:root {
+    --nav-color:#0d0b0b;
+    --font-color:#f0f0f3;
+    --sec-color:#513630;
+    --bg-color:#252424;
+    --button-color:#da8413;
+    --font3-color:#9d9fa1;
+    --sec3-color:#a2b5d4;
+    --link-color:#90888f;
+    --font2-font-color: rgb(235, 230, 230);
+    --font1-font-family : 'Montserrat', sans-serif;
+    --font2-font-family : 'Poppins', sans-serif;
+    --font3-font-family : 'Roboto', sans-serif;
+}
+
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(212, 208, 208);
+}
+
+button{
+    text-decoration: none;
+    background: none;
+    border: none;
+    font: var(--font1-font-family);
+}
+
+body{
+    background: var(--bg-color);
+    margin: 0px;
+    font-family: var(--font1-font-family);
+    color: var(--font2-font-color);
+}
+
+
+/* ------------------------------------Navigation Bar---------------- */
+
+
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 17px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--nav-color);
+    z-index: 100;
+    box-shadow: 2px 2px 4px #1a1919;
+}
+
+nav .nav-logo{
+    margin-left: 50px;
+    font-size: 20px;
+    letter-spacing: 0.05rem;
+}
+
+nav .nav-logo b{
+    font-weight: 600;
+    color: #da8413;
+}
+
+nav .nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 37%;
+    letter-spacing: 0.04rem;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+nav .nav-items li a:hover{
+    color: #da8413;
+    transition: all 0.3s;
+}
+
+nav .nav-button{
+    margin-right: 50px;
+    color: var(--font2-font-color);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav .nav-button .sign-in{
+    color: var(--font2-font-color);
+    letter-spacing: 0.05rem;
+    margin-right: 30px;
+}
+
+nav .nav-button .sign-in:hover{
+    cursor: pointer;
+    color: #da8413;
+    transition: all 0.3s;
+}
+
+nav .nav-button .book-room{
+    color: var(--font2-font-color);
+    background: #252424;
+    padding: 15px 20px;
+    letter-spacing: 0.05rem;
+}
+
+nav .nav-button .book-room:hover{
+    cursor: pointer;
+    background-color: #da8413;
+    transition: all 0.3s;
+}
+
+
+/* --------------------------------HERO---------------------- */
+
+.hero {
+    position: relative;
+    width: 100%;
+    padding: 140px 0px 50px;
+}
+
+.hero .hero-top{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.hero .hero-top .hero-top-left{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: var(--font-color);
+    width: 50%;
+}
+
+.hero .hero-top .hero-top-left span{
+    font-weight: 500;
+}
+
+.hero .hero-top .hero-top-right{
+    width: 50%;
+    letter-spacing: 0.1rem;
+    font-size: 14.5px;
+    line-height: 1.5rem;
+}
+
+.hero .hero-mid {
+    width: 90%;
+    margin: auto;
+}
+
+.hero .hero-mid img{
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+.hero .hero-bottom{
+    width: 75%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 60px 0px;
+}
+
+
+.hero .hero-bottom .hero-bottom-left {
+    width: 47%;
+}
+
+.hero .hero-bottom .hero-bottom-left h2{
+    font-size: 35px;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.hero .hero-bottom .hero-bottom-left h2 span{
+    font-weight: 500;
+}
+
+.hero .hero-bottom .hero-bottom-left img{
+    width: 95%;
+}
+
+.hero .hero-bottom .hero-bottom-right {
+    width: 47%;
+}
+
+.hero .hero-bottom .hero-bottom-right img{
+    width: 100%;
+}
+
+.hero .hero-bottom .hero-bottom-right p{
+    margin-top: 40px;
+    font-family: var(--font1-font-family);
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+
+.hero .hero-bottom .hero-bottom-right button{
+    margin-top: 20px;
+    background: var(--button-color);
+    padding: 15px 20px;
+    color: var(--font-color);
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+}
+
+.hero .hero-bottom .hero-bottom-right button span{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.hero .hero-bottom .hero-bottom-right button:hover{
+    background: #4d4b4b;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.hero .hero-bottom .hero-bottom-right h1{
+    margin-top: 40px;
+    font-size: 30px;
+    letter-spacing: 0.1rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+}
+
+.hero .hero-bottom .hero-bottom-right h1 span{
+    color: #eb9019;
+    font-size: 65px;
+    text-shadow: 2px 2px 2px #181515;
+}

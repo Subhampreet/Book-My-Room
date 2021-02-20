@@ -1,0 +1,126 @@
+/*	general	*/
+.explore .row{
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+    position: relative;
+}
+
+.gallery {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+/*	gallery */
+
+
+
+.explore .filter-button{
+    font-size: 12px;
+    border: 2px solid #252424;
+	padding:5px 10px;
+    text-align: center;
+    color: #252525;
+    background-color: #252424 !important;
+    color: #ffffff;
+    margin-bottom: 30px;
+	background:transparent;
+    letter-spacing: 0.1rem;
+}
+.explore .filter-button:hover,
+.explore .filter-button:focus,
+.explore .filter-button.active{
+    color: #ffffff;
+    border: 2px solid rgb(233, 140, 19);
+    background-color: rgb(233, 140, 19) !important;
+	outline:none;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.explore .gallery_product{
+    margin: 0px;
+	padding:0;
+    position:relative;
+    margin-bottom: -8px;
+}
+
+
+.explore .gallery_product .img-info{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+	overflow:hidden;
+	color:#fff;
+    top:0;
+    display:none;
+	-webkit-transition: 2s;
+    transition: 2s;
+}
+
+.explore .gallery_product .img-info h4{
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    /* width: 90%; */
+    font-size: 18px;
+    
+}
+
+.explore .gallery_product .img-info p{
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    font-size: 18px;
+}
+
+.explore .gallery_product:hover .img-info{
+	display:block;
+   -webkit-transition: all 3s;
+    transition: all 3s;
+}
+
+.explore .gallery_product:hover .img-info .img-info-main{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 95%;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+.explore .book{
+    margin-top: 20px;
+    background: #252424;
+    padding: 15px 20px;
+    color: var(--font-color);
+    font-weight: 600;
+    letter-spacing: 0.08rem;
+    
+}
+
+.explore .book span{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.explore .book:hover{
+    background: #f09012;
+    transition: all 0.3s;
+    cursor: pointer;
+    
+}
+
+
+.explore .book-room {
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+}

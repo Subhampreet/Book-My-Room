@@ -250,7 +250,7 @@ nav .nav-button .book-room:hover{
 .about {
     position: relative;
     background: #f0f0f3;
-    padding: 70px 0px 50px;
+    padding: 70px 0px 70px;
     color: rgb(34, 32, 32);
 }
 
@@ -374,3 +374,177 @@ footer .footer-body .footer-right .footer-list .main{
 footer .footer-body .footer-right .footer-list li{
     margin-bottom: 15px;
 }
+
+
+/* ----------------------------------Testimonial-------------------- */
+
+
+.testimonial {
+    position: relative;
+    width: 100%;
+    padding: 70px 0px 50px;
+}
+
+.testimonial .test-body {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.testimonial .test-body .test-body-left {
+    width: 50%;
+}
+
+.testimonial .test-body .test-body-left img{
+    width: 100%;
+}
+
+.testimonial .test-body .test-body-left .test-left-top{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.testimonial .test-body .test-body-left .test-left-top img{
+    width: 48%;
+    object-fit: cover;
+    
+}
+
+.testimonial .test-body .test-body-left .test-left-top div{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial .test-body .test-body-left .test-left-top div img{
+    width: 100%;
+    height: 47.5%;
+}
+
+.testimonial .test-body .test-body-right{
+    width: 40%;
+}
+
+.testimonial .test-body .test-body-right h1{
+    font-size: 38px;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+    margin-bottom: 40px;
+}
+
+.testimonial .test-body .test-body-right h1 span{
+    font-weight: 500;
+}
+
+.testimonial .test-body .test-body-right .test-1{
+    margin-bottom: 50px;
+}
+
+.testimonial .test-body .test-body-right .test-1 h1{
+    margin-bottom: 10px;
+    letter-spacing: 0.4rem;
+    color: #f19823;
+    font-family: var(--font1-font-family);
+}
+
+.testimonial .test-body .test-body-right .test-1 p{
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    font-size: 14px;
+}
+
+.testimonial .test-body .test-body-right .test-1 h4{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+.testimonial .test-body .test-body-right .test-1 h5{
+    margin-top: 5px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: #90888f;
+}
+
+/* -------------------------Explore------------------ */
+
+.explore {
+    background-color: rgb(252, 250, 250);
+    margin-top: -25px;
+    color: #1a1919;
+    width: 100%;
+    position: relative;
+    padding: 50px 0px 50px;
+}
+
+.explore .explore-body{
+    width: 85%;
+    margin: auto;
+}
+
+.explore .explore-body h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.explore .explore-body h1 span{
+    font-weight: 500;
+}
+
+.explore .explore-body p{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.explore .explore-body .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .explore .explore-body  .searchTerm {
+    width: 100%;
+    /* border: 1px solid #252424; */
+    border: none;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    letter-spacing: 0.08rem;
+  }
+  
+  .explore .explore-body .searchTerm:focus{
+    color: #181614;
+  }
+  
+  .explore .explore-body .searchButton {
+    width: 38px;
+    height: 31px;
+    border: 1px solid #2c2b2b;
+    background: #2b2929;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .explore .explore-body .searchButton:hover{
+    border: 1px solid #f19823;
+    background: #f19823;
+    transition: all 0.3s;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .explore .explore-body .wrap{
+    width: 33%;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+  }

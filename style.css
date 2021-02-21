@@ -929,13 +929,13 @@ footer .footer-body .footer-right .footer-list li{
 
 @media (max-width: 750px){
     .hero .hero-bottom .hero-bottom-right h1{
-        font-size: 21px !important;
+        font-size: 20px !important;
        
     }
     
     
     .hero .hero-bottom .hero-bottom-right h1 span{
-        font-size: 50px;
+        font-size: 43px;
     }
 
 
@@ -1019,4 +1019,11 @@ footer .footer-body .footer-right .footer-list li{
     margin: auto;
     margin-top: 20px;
     }
+
+
+
+    .explore .gallery_product .img-responsive{
+        width: 95% !important;
+    }
+    
 }

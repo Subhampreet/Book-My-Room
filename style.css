@@ -957,13 +957,14 @@ footer .footer-body .footer-right .footer-list li{
     footer .footer-body .footer-left .footer-social{
         margin: auto;
         margin-top: 30px;
+        width: 70%;
     } 
     
     
     
     
     footer .footer-body .footer-right{
-        width: 100%;
+        width: 90%;
         text-align: center;
         flex-direction: column;
         margin-top: 20px;
@@ -1025,5 +1026,14 @@ footer .footer-body .footer-right .footer-list li{
     .explore .gallery_product .img-responsive{
         width: 95% !important;
     }
+
+
+    nav .nav-logo{
+        margin-left: 30px;
+    }
+
+    .res-nav-icon{
+        margin-right: 30px;
+      }
     
 }

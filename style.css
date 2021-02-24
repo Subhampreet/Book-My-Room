@@ -569,9 +569,65 @@ nav .nav-button .book-room:hover{
   }
 
 
+  /* -----------------------------------NEAREST----------------------------- */
+
+  .nearest {
+    width: 100%;
+    position: relative;
+    padding: 50px 0px 50px;
+    position: relative;
+    background: #f0f0f3;
+    color: rgb(43, 41, 41);
+  }
+
+  .nearest .nearest-body {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  .nearest .nearest-body .nearest-left {
+      width: 50%;
+  }
+
+  .nearest .nearest-body .nearest-left h1{
+      font-size: 23px;
+      line-height: 3.0rem;
+      font-weight: 500;
+  }
 
 
+  .nearest .nearest-body .nearest-left h1 span{
+      font-size: 70px;
+      font-weight: 600;
+  }
 
+  .nearest .nearest-body .nearest-left p{
+      width: 90%;
+      font-size: 17px;
+      letter-spacing: 0.07rem;
+      line-height: 1.5rem;
+      margin-bottom: 30px;
+  }
+
+
+  .nearest .nearest-body .nearest-left p span{
+      font-weight: 600;
+  }
+
+  .nearest .nearest-body .nearest-left a{
+      color: #e68b15;
+      font-weight: 600;
+      text-decoration: underline;
+      font-size: 17px;
+      letter-spacing: 0.05rem;
+  }
+
+  .nearest .nearest-body .nearest-left a:hover{
+    color: #aaa9a9;
+    transition: all 0.3s;
+  }
 
   /* ----------------------------------------FOOTER----------------------- */
 
@@ -608,6 +664,7 @@ footer .footer-body .footer-left p{
     line-height: 1.5rem;
     margin-top: 20px;
 }
+
 
 footer .footer-body .footer-left .footer-social{
     margin-top: 30px;
@@ -922,6 +979,52 @@ footer .footer-body .footer-right .footer-list li{
     width: 90%;
 }
 
+/* ------------------------------------------NEAREST-------------------- */
+
+/* -----------------------------------NEAREST----------------------------- */
+
+.nearest {
+    width: 100%;
+    position: relative;
+    padding: 50px 0px 50px;
+    position: relative;
+    background: #f0f0f3;
+    color: rgb(43, 41, 41);
+  }
+
+  .nearest .nearest-body {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .nearest .nearest-body .nearest-left {
+      width: 80%;
+      margin: auto;
+  }
+
+  
+
+
+  
+
+  .nearest .nearest-body .nearest-left p{
+      width: 90%;
+      margin-bottom: 20px;
+  }
+
+  .nearest .nearest-body .nearest-right{
+      width: 80%;
+      margin: auto;
+      margin-top: 30px;
+  }
+  
+  .nearest .nearest-body .nearest-right .map{
+      width: 100% !important;
+      margin: auto;
+      height: 400px;
+  }
 
 
 }
@@ -1035,5 +1138,20 @@ footer .footer-body .footer-right .footer-list li{
     .res-nav-icon{
         margin-right: 30px;
       }
-    
+
+    .nearest .nearest-body .nearest-left {
+        width: 90%;
+        margin: auto;
+    }
+
+    .nearest .nearest-body .nearest-right{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+    }    
+
+    .nearest .nearest-body .nearest-left p{
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }

@@ -31,7 +31,9 @@ a{
 
 button{
     text-decoration: none;
-    background: none;
+    background: #da8413;
+    padding: 15px 20px;
+    color: #ffffff;
     border: none;
     font: var(--font1-font-family);
 }

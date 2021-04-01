@@ -1,3 +1,17 @@
+<?php
+  // session start
+  session_start();
+
+  // include db connection
+  include('./scripts/db.php');
+
+  // check for logged in user!
+  if(isset($_SESSION['email'])) {
+
+    header('Location: ./calendar/index.php?message=You have logged in successfully!');
+
+  } 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -87,7 +101,7 @@
           
           
           <button class="book-room" data-aos="fade-down" data-aos-delay="1000">
-            <a href="./modal/index.html">BOOK ROOM</a>
+            <a href="./login/index.php">BOOK ROOM</a>
           </button>
           
         </div>

@@ -1,3 +1,21 @@
+<?php
+  // include db connection
+  include('./scripts/db.php');
+
+  // session start
+  session_start();
+
+  // check if user is logged in or not!
+  if(isset($_SESSION['email'])) {
+    
+    $email = $_SESSION['email'];
+  
+  } else {
+
+    header('Location: ../login/index.php?message=Login first!');
+
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 

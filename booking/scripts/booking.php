@@ -56,7 +56,7 @@
     if($roomFor != "" && $name != "" && $number != "" && $day != 0 && $month != "" && $stay != 0 && $roomType != "" && $adults != 0) {
 
         // check if room in that particular day is not full!
-        $checkAvailability = "SELECT * FROM `bookings` WHERE `day` = '$day' AND `month` = '$month'";
+        $checkAvailability = "SELECT * FROM `bookings` WHERE `day` = '$day' AND `month` = '$month' AND `roomType` = '$roomType'";
         $checkAvailabilityStatus = mysqli_query($conn,$checkAvailability) or die(mysqli_error($conn));
         $numberOfBookings = mysqli_num_rows($checkAvailabilityStatus);
         
@@ -74,7 +74,13 @@
             
             if($bookRoomStatus) {
 
-                header('Location: ../index.php?message=Booked successfully!');
+                // get latest entry id!
+                $getbooking = "SELECT `id` FROM `bookings` ORDER BY `bookedAt` DESC LIMIT 1";
+                $getbookingStatus = mysqli_query($conn,$getbooking) or die(mysqli_error($conn));
+                $getbookingRow = mysqli_fetch_assoc($getbookingStatus);
+                $bookingId = $getbookingRow['id'];
+
+                header('Location: ../../checkout/index.php?id='.$bookingId);
 
             } else {
 

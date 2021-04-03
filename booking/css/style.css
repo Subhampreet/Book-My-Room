@@ -16,7 +16,7 @@
 
 .section {
 	position: relative;
-	height: 100vh;
+	height: 150vh !important;
 	font-family: var(--font1-font-family);
 	letter-spacing: 0.1rem;
 	background: #4a4b4d;

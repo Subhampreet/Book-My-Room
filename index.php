@@ -8,7 +8,7 @@
   // check for logged in user!
   if(isset($_SESSION['email'])) {
 
-    header('Location: ./calendar/index.php?message=You have logged in successfully!');
+    header('Location: ./booking/index.php?message=You have logged in successfully!');
 
   } 
 ?>

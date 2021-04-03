@@ -27,8 +27,11 @@
 
 </head>
 
-<body>
+<body onLoad = "opensnack()">
 	<div id="booking" class="section">
+		<?php
+			include('../common/message.php');
+		?>
 		<div class="section-center">
 			<div class="container">
 				<div class="row">

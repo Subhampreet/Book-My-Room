@@ -55,6 +55,7 @@
 		<?php
 			include('../common/message.php');
 		?>
+		<!-- <a href="" class = "btn btn-primary" style = "background-color: #fa8919 !important;border: #fa8919 !important;float: right;margin-right: 70px;margin-top: 20px;">Logout</a> -->
 		<div class="section-center">
 			<div class="container">
 				<div class="row">
@@ -66,15 +67,15 @@
 							<div class="form-group">
 								<div class="form-checkbox">
 									<label for="roundtrip">
-										<input type="radio" id="roundtrip" name="roomFor">
+										<input type="radio" id="roundtrip" value = "Single" name="roomFor">
 										<span></span>Single
 									</label>
 									<label for="one-way">
-										<input type="radio" id="one-way" name="roomFor">
+										<input type="radio" id="one-way" value = "Couple" name="roomFor">
 										<span></span>Married Couple
 									</label>
 									<label for="multi-city">
-										<input type="radio" id="multi-city" name="roomFor">
+										<input type="radio" id="multi-city" value = "Family" name="roomFor">
 										<span></span>Family(4 Members)
 									</label>
 								</div>

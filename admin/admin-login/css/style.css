@@ -13,6 +13,21 @@
     --font3-font-family : 'Roboto', sans-serif;
 }
 
+button{
+	background-color: #da8413 !important;
+	color: #ffffff !important;
+	padding: 15px 20px;
+	border: #da8413 !important;
+	border-radius: 0px !important;
+	width: 40%;
+	height: 50px;
+	display: inline-block;
+}
+
+button:hover{
+	background-color: #90888f !important;
+	border: #90888f !important;
+}
 
 .section {
 	position: relative;

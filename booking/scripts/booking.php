@@ -56,17 +56,21 @@
     if($roomFor != "" && $name != "" && $number != "" && $day != 0 && $month != "" && $stay != 0 && $roomType != "" && $adults != 0) {
 
         // check if room in that particular day is not full!
+        $numberOfBookings = 0;
         $checkAvailability = "SELECT * FROM `bookings` WHERE `day` = '$day' AND `month` = '$month' AND `roomType` = '$roomType'";
         $checkAvailabilityStatus = mysqli_query($conn,$checkAvailability) or die(mysqli_error($conn));
-        $numberOfBookings = mysqli_num_rows($checkAvailabilityStatus);
-        
+        while($checkAvailabilityRow = mysqli_fetch_assoc($checkAvailabilityStatus)) {
+            $numberOfBookings = $numberOfBookings + 1;
+        }
+
         // check no of bookings for one day
+        $roomLimit = 0;
         $checkNoBookings = "SELECT * FROM `capacity` WHERE `month` = '$month' AND `roomType` = '$roomType'";
         $checkNoBookingsStatus = mysqli_query($conn,$checkNoBookings) or die(mysqli_error($conn));
         $checkNoBookingsRow = mysqli_fetch_assoc($checkNoBookingsStatus);
         $roomLimit = $checkNoBookingsRow['roomLimit'];
-
-        if($numberOfBookings <= $roomLimit) {
+        
+        if($numberOfBookings < $roomLimit) {
 
             // insert into the database!
             $bookRoom = "INSERT INTO `bookings`(`roomFor`,`name`,`number`,`day`,`month`,`stay`,`roomType`,`adults`,`children`,`bookedAt`) VALUES('$roomFor','$name','$number','$day','$month','$stay','$roomType','$adults','$children','$bookedAt')";

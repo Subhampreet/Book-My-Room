@@ -65,6 +65,8 @@
 			$getBookingRow = mysqli_fetch_assoc($getBookingStatus);
 			$stay = $getBookingRow['stay'];
 			$type = $getBookingRow['roomType'];
+			$adults = $getBookingRow['adults'];
+			$children = $getBookingRow['children'];
 
 			// get price of given room type!
 			$getPrice = "SELECT * FROM `roomprices` WHERE `type` = '$type'";
@@ -72,7 +74,7 @@
 			$getPriceRow = mysqli_fetch_assoc($getPriceStatus);
 			$roomprice = $getPriceRow['price'];
 
-			$totalPrice = $stay*$roomprice;
+			$totalPrice = $stay*$roomprice*($adults+$children);
 		?>
 		<div class="section-center">
 			<div class="container">
@@ -84,7 +86,7 @@
 						<h4>
 							Final Pricing
 						</h4>
-						<p style = "color: #ffffff"><?=$type?> <span class="price"><?=$stay?>*<?=$roomprice?></span></p>
+						<p style = "color: #ffffff"><?=$type?> <span class="price"><?=$stay?>*<?=$roomprice?>*(<?=$adults?>+<?=$children?>)</span></p>
 						<hr>
       					<p style = "color: #ffffff">Total <span class="price" style="color:#ffffff"><b><?=$totalPrice?></b></span></p>
 						<form action="./scripts/confirmBooking.php" method = "POST">

@@ -5,6 +5,9 @@
   // session start
   session_start();
 
+  // getting month selected!
+  $month = $_GET['month'];
+
   // check if user is logged in or not!
   if(isset($_SESSION['email'])) {
     
@@ -37,6 +40,9 @@
 
 	<!-- Bootstrap -->
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Date picker css -->
+    <link rel="stylesheet" href="css/date.css">
 
 	<!-- Custom stlylesheet -->
 	<link type="text/css" rel="stylesheet" href="css/style.css" />	
@@ -71,31 +77,45 @@
 						<div class="form-header">
 							<h1>bookMy<span><b>Room</b></span></h1>
 						</div>
-						<form action = "./scripts/setMonth.php" method = "POST">
-								<div class="form-group">
-									<select class="form-control" name = "month" required>
-										<option value = "January">January</option>
-										<option value = "February">February</option>
-										<option value = "March">March</option>
-										<option value = "April">April</option>
-										<option value = "May">May</option>
-										<option value = "June">June</option>
-										<option value = "July">July</option>
-										<option value = "August">August</option>
-										<option value = "September">September</option>
-										<option value = "October">October</option>
-										<option value = "November">November</option>
-										<option value = "December">December</option>
-									</select>
-									<span class="select-arrow"></span>
-									<span class="form-label">Month</span>
-							</div>
-							<div class="book-btn">
-								<div class="form-btn">
-									<button class="submit-btn-main">Proceed</button>
-								</div>
-							</div>
-						</form>
+						<div class="month">
+                            <ul>
+                                <li><?=$month?><br><span style="font-size:18px">2021</span></li>
+                            </ul>
+                        </div>
+                        <ul class="days">
+                        <?php
+                            $getMonths = "SELECT `days` FROM `months` WHERE `month` = '$month'";
+                            $getMonthsStatus = mysqli_query($conn,$getMonths) or die(mysqli_error($conn));
+                            $getMonthsRow = mysqli_fetch_assoc($getMonthsStatus);
+                            $days = $getMonthsRow['days'];
+                            for($i = 1; $i <= $days; $i++){
+                        ?>
+                            <?php
+                                $numberOfBookings = 0;
+                                $checkAvailability = "SELECT * FROM `bookings` WHERE `day` = '$i' AND `month` = '$month'";
+                                $checkAvailabilityStatus = mysqli_query($conn,$checkAvailability) or die(mysqli_error($conn));
+                                while($checkAvailabilityRow = mysqli_fetch_assoc($checkAvailabilityStatus)) {
+                                    $numberOfBookings = $numberOfBookings + 1;
+                                }
+                        
+                                // check no of bookings for one day
+                                $roomLimit = 0;
+                                $checkNoBookings = "SELECT * FROM `capacity` WHERE `month` = '$month'";
+                                $checkNoBookingsStatus = mysqli_query($conn,$checkNoBookings) or die(mysqli_error($conn));
+                                $checkNoBookingsRow = mysqli_fetch_assoc($checkNoBookingsStatus);
+                                $roomLimit = $checkNoBookingsRow['roomLimit'];
+                                if($numberOfBookings < $roomLimit) {
+                            ?>
+                            <li><a  class = "available" href="./booking.php?day=<?=$i?>&&month=<?=$month?>"><?=$i?></a></li>
+                        <?php
+                                } else {
+                        ?>
+                            <li><span class = "not-available"><?=$i?></span></li>
+                        <?php
+                                }
+                            }
+                        ?>
+                        </ul>
 					</div>
 				</div>
 			</div>

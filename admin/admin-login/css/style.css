@@ -13,10 +13,25 @@
     --font3-font-family : 'Roboto', sans-serif;
 }
 
+button{
+	background-color: #da8413 !important;
+	color: #ffffff !important;
+	padding: 15px 20px;
+	border: #da8413 !important;
+	border-radius: 0px !important;
+	width: 40%;
+	height: 50px;
+	display: inline-block;
+}
+
+button:hover{
+	background-color: #90888f !important;
+	border: #90888f !important;
+}
 
 .section {
 	position: relative;
-	height: 120vh !important;
+	height: 100vh !important;
 	font-family: var(--font1-font-family);
 	letter-spacing: 0.1rem;
 	background: #4a4b4d;
@@ -222,76 +237,4 @@
 	letter-spacing: 0.1rem;
 }
 
-/* Navigation Menu */
-/* ------------------------------------Navigation Bar---------------- */
 
-
-nav{
-    position: fixed;
-    width: 100%;
-    padding: 17px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--nav-color);
-    z-index: 100;
-    box-shadow: 2px 2px 4px #1a1919;
-}
-
-nav .nav-logo{
-    margin-left: 50px;
-    font-size: 20px;
-    letter-spacing: 0.05rem;
-}
-
-nav .nav-logo b{
-    font-weight: 600;
-    color: #da8413;
-}
-
-nav .nav-items{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 37%;
-    letter-spacing: 0.04rem;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-nav .nav-items li a:hover{
-    color: #da8413;
-    transition: all 0.3s;
-}
-
-nav .nav-button{
-    margin-right: 50px;
-    color: var(--font2-font-color);
-    font-size: 15px;
-    font-weight: 600;
-}
-
-nav .nav-button .sign-in{
-    color: var(--font2-font-color);
-    letter-spacing: 0.05rem;
-    margin-right: 30px;
-}
-
-nav .nav-button .sign-in:hover{
-    cursor: pointer;
-    color: #da8413;
-    transition: all 0.3s;
-}
-
-nav .nav-button .book-room{
-    color: var(--font2-font-color);
-    background: #252424;
-    padding: 15px 20px;
-    letter-spacing: 0.05rem;
-}
-
-nav .nav-button .book-room:hover{
-    cursor: pointer;
-    background-color: #da8413;
-    transition: all 0.1s;
-}

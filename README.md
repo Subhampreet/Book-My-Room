@@ -12,5 +12,18 @@ The Server Side Development for the project has been made in PHP and MySQL Datab
 - An automated billing system for the user
 - A Payment gateway (Razor Pay) for the online payment feature 
 
+The Software’s and the programming languages used in the development of the Hotel Management System are as follows:
+
+- Front-End Development:
+	1. HTML 
+	2. CSS
+	3. React JS Library
+	4. Bootstrap Libraries
+	5. Vanilla JavaScript
+
+- Back-End Development:
+	1. PHP
+	2. MySQL
+
 
 <img src="https://github.com/Subhampreet/Book-My-Room/blob/main/template-main.png" >

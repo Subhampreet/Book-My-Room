@@ -1,4 +1,4 @@
-# 🏡 Book My Room 
+<h1 align="center">🏡 Book My Room</h1> 
 
 <b>bookMyRoom</b> is a simple Room booking website which is in the devlopment phase. This project contains whole source code in php code. The website includes a main site and an admin panel. The Backend is being developed using PHP and MySQL Database.
 
